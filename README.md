@@ -43,7 +43,13 @@ The notebook can allow a computational researcher to create reproducible documen
 5. If the installation is successful, you should see a list of installed packages with
     - `conda list`
 If the command cannot be found, you can add Anaconda bin to the path using:
-    ` export PATH=~/miniconda3/bin:$PATH`
+    ` export PATH=~/miniconda3/bin:$PATH >>.zshrc` or
+    open `.zshrc` using nano
+    `nano .zshrc`
+    then paste `export PATH=~/miniconda3/bin:$PATH` to the end of the file then save.
+    also edit the `.profile` on your home directory
+    then run `source .zshrc`
+    
 
 For reproducible analysis, you can [create a conda environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) with all the Python packages you used.
 
